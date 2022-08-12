@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="descriptio" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="author" content=""/>
+    <meta charset="UTF-8">
+    <title></title>	
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="./css/buy_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header class="wrap header">
+    <div id="notice"><a href="./sc.html">'코로나19'로 인한 배송불가 지역안내</a></div>
+    <nav id="gnb">
+        <div id="menu_btn">
+            <span></span>
+            <span></span>
+        </div>    
+        <ul class="menu">
+            <li><a href="./pd1.html">LP</a></li>
+            <li><a href="./pd2.html">중고LP</a></li>
+            <li><a href="./pd3.html">LP악세서리</a></li>
+            <li><a href="./main.html">HOME</a></li>
+        </ul>
+        <ul id="icon">
+            <li><a href="./my.html"><img src="./images/icon1_w.png" alt="icon1" /></a></li>
+            <li><p><img src="./images/icon2_w.png" alt="icon2" class="icon2"/></p></li>
+        </ul>      
+    </nav> 
+    <div id="contents">
+            <div class="btn">
+                <div class="login active">로그인</div>
+                <div class="signup">회원가입</div>
+            </div>
+        <div id="tab_contents">    
+            <form id="mypage" class="active">
+                <input type="text" name="id" placeholder=" ID" size="40" class="id" id="ident" />
+                <input type="password" name="pwd" placeholder=" PASSWORD" class="password" id="pwdent"/>
+                <label class="ckbox"><input type="checkbox" name="hobby"/>&nbsp; 로그인상태 유지</label>
+                <div class="find"><a href="#">아이디/비밀번호 찾기</a></div>
+                <input type="submit" value="로그인" class="loginbtn"/>
+
+                <div id="noid"><p>아이디를 입력하세요</p><a href="#" class="noidbtn"><p>확인</p></a></div>
+                <div id="nopwd"><p>비밀번호를 입력하세요</p><a href="#" class="nopwdbtn"><p>확인</p></a></div>
+
+                <div id="loginsuc"><p>로그인 되었습니다</p><a href="#" class="sucbtn_l"><p>확인</p></a></div>
+            </form>
+            
+            <form id="mypage2">
+                <input type="text" name="id1" placeholder=" ID" size="40" class="id2" id="ident2" />
+                <input type="text" name="name1" placeholder=" 성" size="20" class="name1" id="nment1"/>
+                <input type="text" name="name2" placeholder=" 이름" size="20" class="name2" id="nment2" />
+                <input type="password" name="pwd1" placeholder=" PASSWORD" class="password1" id="pwdent1"/>
+                <input type="password" name="pwd2" placeholder=" PASSWORD" class="password2" id="pwdent2"/>
+                <label class="ckbox2"><input type="checkbox" name="ok"/>&nbsp; 이용약관 동의</label>
+                <input type="submit" value="회원가입" class="signupbtn"/>
+
+                <div id="noid2"><p>아이디를 입력하세요</p><a href="#" class="noidbtn2"><p>확인</p></a></div>
+                <div id="noname1"><p>이름을 입력하세요</p><a href="#" class="namebtn1"><p>확인</p></a></div>
+                <div id="noname2"><p>이름을 입력하세요</p><a href="#" class="namebtn2"><p>확인</p></a></div>
+                <div id="nopwd1"><p>비밀번호를 입력하세요</p><a href="#" class="nopwdbtn1"><p>확인</p></a></div>
+                <div id="nopwd2" ><p>비밀번호가 일치하지 않습니다</p><a href="#" class="nopwdbtn2"><p>확인</p></a></div>
+                <div id="nook"><p>이용약관에 동의해주세요</p><a href="#" class="nookbtn"><p>확인</p></a></div>
+
+                <div id="signupsuc"><p>회원가입이 완료되었습니다</p><a href="#" class="sucbtn_s"><p>확인</p></a></div>
+            </form>
+        </div>
+    </div>   
+</header>
+<section id="contents2">
+    <div id="topbtn">
+        <p>▲</p>
+    </div>
+    <div id="b_upbtn">
+        <p>▲</p>
+    </div>
+    <div id="buypage">
+        <h4>결제진행</h4>
+        <div class="buypage1">
+            <ul>
+                <li>제품명</li>
+                <li>수량</li>
+                <li>가격</li>
+            </ul>
+            <ul class="pdbuy1">
+                <li><a href="./dt.html"><img src="./images/lp1.jpg" alt="lp1"/></a></li>
+                <li><a href="./dt.html">AKMU COLLABORATION ALBUM</br>[NEXT EPISODE] LP -LIMITED EDITION</a></li>
+                <li>1</li>
+                <li>56,800원</li>
+            </ul>
+            <ul class="pdbuy2">
+                <li><a href="./dt.html"><img src="./images/lp2.jpg" alt="lp1"/></a></li>
+                <li><a href="./dt.html">콜드 (Colde) Love part 1 [LP]</a></li>
+                <li>1</li>
+                <li>55,500원</li>
+            </ul>
+            <ul class="pdbuy3">
+                <li><a href="./dt.html"><img src="./images/lp3.jpg" alt="lp1"/></a></li>
+                <li><a href="./dt.html">이이언 (eAeon) - 2집 Fragile </br>[다크 퍼플 컬러 LP]</a></li>
+                <li>1</li>
+                <li>61,400원</li>
+            </ul>
+        </div>
+        <div class="buypage2">
+            <p>주문자 정보입력</p>
+            <form id="orin">
+                <ul>
+                    <li><p>이름</p></li>
+                    <li><input type="text" name="b_nm" class="b_nm" id="b_nment" /></li>
+                </ul>
+                <ul>
+                    <li><p>휴대전화</p></li>
+                    <li><input type="text" name="phone1" placeholder=" 010" class="phone1" id="phoneent1" maxlength="3"/></li>
+                    <li>-</li>
+                    <li><input type="text" name="phone2" class="phone2" id="phoneent2" maxlength="4"/></li>
+                    <li>-</li>
+                    <li><input type="text" name="phone3" class="phone3" id="phoneent3" maxlength="4"/></li>
+                </ul>
+                <ul>
+                    <li><p>이메일</p></li>
+                    <li><input type="text" name="email1" class="email1" id="emeent1" /></li>
+                    <li>@</li>
+                    <li><input type="text" name="email2" class="email2" id="emeent2" /></li>
+                    <li>
+                        <select name="em">
+                            <option value="my">직접입력</option>
+                            <option value="naver">naver.com</option>
+                            <option value="daum">daum.net</option>
+                            <option value="google">gmail.com</option>
+                        </select>
+                    </li>
+                </ul>
+                <ul>
+                    <li><p>주문 비밀번호</p></li>
+                    <li><input type="text" name="b_pw" class="b_pw" id="b_pwent" /></li>
+                </ul>
+                <ul>
+                    <li><p>비밀번호 확인</p></li>
+                    <li><input type="text" name="b_pwchk" class="b_pwchk" id="b_pwchkent" /></li>
+                </ul>
+            </form>
+        </div>
+        <div class="buypage3">
+            <p>배송지 정보입력</p>
+            <form id="dein">
+                <ul>
+                    <li><p>받으시는 분</p></li>
+                    <li><input type="text" name="renm" class="renm" id="renment" /></li>
+                </ul>
+                <ul>
+                    <li><p>휴대전화</p></li>
+                    <li><input type="text" name="phone4" placeholder=" 010" class="phone4" id="phoneent4" maxlength="3"/></li>
+                    <li>-</li>
+                    <li><input type="text" name="phone5" class="phone5" id="phoneent5"  maxlength="4"/></li>
+                    <li>-</li>
+                    <li><input type="text" name="phone6" class="phone6" id="phoneent6"  maxlength="5"/></li>
+                </ul>
+                <ul>
+                    <li><p>주소</p></li>
+                    <li><input type="text" disabled /></li>
+                    <li><p>우편번호 검색</p></li>
+                </ul>
+                <ul><input type="text" disabled /></ul>
+                <ul><input type="text" name="adress" class="adress" id="adent"/></ul>
+                <ul>
+                    <li><p>요청사항</p></li>
+                    <li>
+                        <select name="reqsel">
+                            <option value="my">직접입력</option>
+                            <option value="1">부재시 경비실에 맡겨주세요</option>
+                            <option value="2">부재시, 연럭주세요</option>
+                            <option value="3">배송 전, 연락주세요</option>
+                        </select>
+                    </li>
+                </ul>
+                <ul><input type="text" name="req" class="req" id="reqent" /></ul>
+            </form>
+        </div>
+        <div class="buypage4">
+            <p>결제수단 선택</p>
+            <ul>
+                <li><p class="active">신용/체크카드</p></li>
+                <li><p>실시간계좌이체</p></li>
+                <li><p>무통장입금</p></li>
+                <li><p>카카오페이</p></li>
+            </ul>
+        </div>
+        <div id="bp5_6">
+            <div class="buypage5">
+            <p>쿠폰입력</p>
+            <ul class="coupon">
+                <li><input type="text" name="coupon"/></li>   
+                <li><p>등록</p></li>      
+            </ul>          
+            </div>
+            <div class="buypage6">
+                <ul class="sum">
+                    <li>
+                        <ul class="pdnum">
+                            <li><p>선택상품 수량</p></li>
+                            <li>3 개</li>
+                        </ul>    
+                    </li>    
+                    <li>
+                        <ul class="pdpc1">
+                            <li><p>상품금액</p></li>
+                            <li>173,700 원</li>
+                        </ul>    
+                        <ul class="pdpc2">
+                            <li><p>할인금액</p></li>
+                            <li>30,000 원</li>
+                        </ul>    
+                    </li>    
+                    <li>
+                        <ul class="total">
+                            <li><p>Total</p></li>
+                            <li>143,700 원</li>
+                        </ul>    
+                    </li>    
+                    <li class="agr">
+                        <p>주문확인 및 동의</p>
+                        <p>주문하시는 상품의 정보 및 가격, 배송정보를 확인하였으며,</br>구매에 동의하시겠습니까?</p>
+                        <label><input type="checkbox" name="agrchk" /> 동의합니다</label>
+                    </li>
+                    <li>
+                        <form name="form" id="buy" >
+                            <input type="submit" value="구매하기" class="buybtn" />      
+                        </form>
+                    </li>
+                </ul>
+                <div id="nochk">
+                    <p>주문확인 및 동의에 체크해주세요</p><span class="nochkbtn"><p>확인</p></spsan>
+                </div>
+                <div id="b_nonm">
+                    <p>주문자 이름을 입력하세요</p><span class="b_nonmbtn"><p>확인</p></span>
+                </div>
+                <div id="b_noph1">
+                    <p>연락처를 입력하세요</p><span class="b_nophbtn1"><p>확인</p></span>
+                </div>
+                <div id="b_noph2">
+                    <p>연락처를 입력하세요</p><span class="b_nophbtn2"><p>확인</p></span>
+                </div>
+                <div id="b_noph3">
+                    <p>연락처를 입력하세요</p><span class="b_nophbtn3"><p>확인</p></span>
+                </div>
+                <div id="b_noph4">
+                    <p>연락처를 입력하세요</p><span class="b_nophbtn4"><p>확인</p></span>
+                </div>
+                <div id="b_noph5">
+                    <p>연락처를 입력하세요</p><span class="b_nophbtn5"><p>확인</p></span>
+                </div>
+                <div id="b_noph6">
+                    <p>연락처를 입력하세요</p><span class="b_nophbtn6"><p>확인</p></span>
+                </div>
+                <div id="b_noem1">
+                    <p>이메일을 입력하세요</p><span class="b_noembtn1"><p>확인</p></span>
+                </div>
+                <div id="b_noem2">
+                    <p>이메일을 입력하세요</p><span class="b_noembtn2"><p>확인</p></span>
+                </div>
+                <div id="b_nopw">
+                    <p>비밀번호를 입력하세요</p><span class="b_nopwbtn"><p>확인</p></span>
+                </div>
+                <div id="b_fpw">
+                    <p>비밀번호가 일치하지 않습니다</p><span class="b_fpwbtn"><p>확인</p></span>
+                </div>
+                <div id="b_norenm">
+                    <p>수령인 이름을 입력하세요</p><span class="b_norenmbtn"><p>확인</p></span>
+                </div>
+                <div id="b_noad">
+                    <p>주소를 입력하세요</p><span class="b_noadbtn"><p>확인</p></span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<footer>
+    <div>
+        <ul class="util_f">
+            <li><p>이용약관</p></li>
+            <li><p>개인정보처리방침</p></li>
+            <li><a href="./sc.html">고객센터</a></li>
+            <li><a href="./main.html"><img src="./images/logo.png" alt="logo_f" /></a></li>
+            <li class="topbtn"><p>TOP▲</p></li>
+            <li><p>FOLLOW US</p></li>
+            <li><p>INSTAGRAM</p></li>
+            <li><p>TWITTER</p></li>
+        </ul>
+    </div>
+</footer>
+<script src="./js/common.js"></script>
+<script>
+function move(){
+    location.href='./buy2.html';
+}
+
+/*유효성검사*/
+$("#buy").submit(function(){
+    var u_b_nm = $("input[name='b_nm']").val();
+    if(!u_b_nm){
+        $("#b_nonm").fadeIn(100);
+        return false;
+    }
+    var u_phone1 = $("input[name='phone1']").val();
+    if(!u_phone1){
+        $("#b_noph1").fadeIn(100);
+        return false;
+    }
+    var u_phone2 = $("input[name='phone2']").val();
+    if(!u_phone2){
+        $("#b_noph2").fadeIn(100);
+        return false;
+    }
+    var u_phone3 = $("input[name='phone3']").val();
+    if(!u_phone3){
+        $("#b_noph3").fadeIn(100);
+        return false;
+    }
+    var u_email1 = $("input[name='email1']").val();
+    if(!u_email1){
+        $("#b_noem1").fadeIn(100);
+        return false;
+    }
+    var u_email2 = $("input[name='email2']").val();
+    if(!u_email2){
+        $("#b_noem2").fadeIn(100);
+        return false;
+    }
+    var u_b_pw = $("input[name='b_pw']").val();
+    if(!u_b_pw){
+        $("#b_nopw").fadeIn(100);
+        return false;
+    }
+    var u_b_pwchk = $("input[name='b_pwchk']").val();
+    if(u_b_pw != u_b_pwchk){
+        $("#b_fpw").fadeIn(100);
+        return false;
+    }
+    var u_renm = $("input[name='renm']").val();
+    if(!u_renm){
+        $("#b_norenm").fadeIn(100);
+        return false;
+    }
+    var u_phone4 = $("input[name='phone4']").val();
+    if(!u_phone4){
+        $("#b_noph4").fadeIn(100);
+        return false;
+    }
+    var u_phone5 = $("input[name='phone5']").val();
+    if(!u_phone5){
+        $("#b_noph5").fadeIn(100);
+        return false;
+    }
+    var u_phone6 = $("input[name='phone6']").val();
+    if(!u_phone6){
+        $("#b_noph6").fadeIn(100);
+        return false;
+    }
+    var u_adress = $("input[name='adress']").val();
+    if(!u_adress){
+        $("#b_noad").fadeIn(100);
+        return false;
+    }
+    var u_agr = $("input[name='agrchk']");
+    if(!u_agr.is(":checked")){
+        $("#nochk").fadeIn(100);
+        return false;
+    }
+    if(u_b_nm && u_phone1 && u_phone2 && u_phone3 && u_email1 && u_email2 && u_b_pw && u_b_pwchk && u_renm && u_phone4 && u_phone5 && u_phone6 && u_adress && u_agr){
+        move();
+        return false;
+    }
+});
+
+    $(".b_nonmbtn").click(function(){
+        $("#b_nonm").fadeOut(100);
+        $("input[name='b_nm']").focus();
+    });
+    $(".b_nophbtn1").click(function(){
+        $("#b_noph1").fadeOut(100);
+        $("input[name='phone1']").focus();
+    });
+    $(".b_nophbtn2").click(function(){
+        $("#b_noph2").fadeOut(100);
+        $("input[name='phone2']").focus();
+    });
+    $(".b_nophbtn3").click(function(){
+        $("#b_noph3").fadeOut(100);
+        $("input[name='phone3']").focus();
+    });
+    $(".b_noembtn1").click(function(){
+        $("#b_noem1").fadeOut(100);
+        $("input[name='email1']").focus();
+    });
+    $(".b_noembtn2").click(function(){
+        $("#b_noem2").fadeOut(100);
+        $("input[name='email2']").focus();
+    });
+    $(".b_nopwbtn").click(function(){
+        $("#b_nopw").fadeOut(100);
+        $("input[name='b_pw']").focus();
+    });
+    $(".b_fpwbtn").click(function(){
+        $("#b_fpw").fadeOut(100);
+        $("input[name='b_pwchk']").focus();
+    });
+    $(".b_norenmbtn").click(function(){
+        $("#b_norenm").fadeOut(100);
+        $("input[name='renm']").focus();
+    });
+    $(".b_nophbtn4").click(function(){
+        $("#b_noph4").fadeOut(100);
+        $("input[name='phone4']").focus();
+    });
+    $(".b_nophbtn5").click(function(){
+        $("#b_noph5").fadeOut(100);
+        $("input[name='phone5']").focus();
+    });
+    $(".b_nophbtn6").click(function(){
+        $("#b_noph6").fadeOut(100);
+        $("input[name='phone6']").focus();
+    });
+    $(".b_noadbtn").click(function(){
+        $("#b_noad").fadeOut(100);
+        $("input[name='adress']").focus();
+    });
+    $(".nochkbtn").click(function(){
+        $("#nochk").fadeOut(100);
+        $("input[name='agrchk']:eq(0)").focus();
+    });
+   
+
+/*수량증감*/
+$(".upbtn").click(function () {
+    var pdcount = parseInt($(this).siblings(".num").text());
+    pdcount += 1;
+    $(this).siblings(".num").text(pdcount);
+});
+$(".dwnbtn").click(function () {
+    var pdcount = parseInt($(this).siblings(".num").text());
+    pdcount -= 1;
+    $(this).siblings(".num").text(pdcount);
+});
+
+/*탑버튼*/
+$("#topbtn>p").click(function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+});
+
+/*탭메뉴*/
+$(function(){
+    $(".buypage4>ul>li>p").click(function(){
+        $(".buypage4>ul>li>p").removeClass("active");
+        $(this).addClass("active");
+    });
+});
+
+/*b_upbtn*/
+$("#b_upbtn>p").click(function(){
+    $('#bp5_6').fadeToggle(150);
+});
+</script>
+</body>
+</html>

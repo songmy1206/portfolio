@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="descriptio" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="author" content=""/>
+    <meta charset="UTF-8">
+    <title></title>	
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="./css/my_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header class="wrap header">
+    <div id="notice"><a href="./sc.html">'코로나19'로 인한 배송불가 지역안내</a></div>
+    <nav id="gnb">
+        <div id="menu_btn">
+            <span></span>
+            <span></span>
+        </div>    
+        <ul class="menu">
+            <li><a href="./pd1.html">LP</a></li>
+            <li><a href="./pd2.html">중고LP</a></li>
+            <li><a href="./pd3.html">LP악세서리</a></li>
+            <li><a href="./main.html">HOME</a></li>
+        </ul>
+        <ul id="icon">
+            <li><a href="./my.html"><img src="./images/icon1_w.png" alt="icon1" /></a></li>
+            <li><p><img src="./images/icon2_w.png" alt="icon2" class="icon2"/></p></li>
+        </ul>      
+    </nav> 
+    <div id="contents">
+            <div class="btn">
+                <div class="login active">로그인</div>
+                <div class="signup">회원가입</div>
+            </div>
+        <div id="tab_contents">    
+            <form id="mypage" class="active">
+                <input type="text" name="id" placeholder=" ID" size="40" class="id" id="ident" />
+                <input type="password" name="pwd" placeholder=" PASSWORD" class="password" id="pwdent"/>
+                <label class="ckbox"><input type="checkbox" name="hobby"/>&nbsp; 로그인상태 유지</label>
+                <div class="find"><a href="#">아이디/비밀번호 찾기</a></div>
+                <input type="submit" value="로그인" class="loginbtn"/>
+
+                <div id="noid"><p>아이디를 입력하세요</p><a href="#" class="noidbtn"><p>확인</p></a></div>
+                <div id="nopwd"><p>비밀번호를 입력하세요</p><a href="#" class="nopwdbtn"><p>확인</p></a></div>
+
+                <div id="loginsuc"><p>로그인 되었습니다</p><a href="#" class="sucbtn_l"><p>확인</p></a></div>
+            </form>
+            
+            <form id="mypage2">
+                <input type="text" name="id1" placeholder=" ID" size="40" class="id2" id="ident2" />
+                <input type="text" name="name1" placeholder=" 성" size="20" class="name1" id="nment1"/>
+                <input type="text" name="name2" placeholder=" 이름" size="20" class="name2" id="nment2" />
+                <input type="password" name="pwd1" placeholder=" PASSWORD" class="password1" id="pwdent1"/>
+                <input type="password" name="pwd2" placeholder=" PASSWORD" class="password2" id="pwdent2"/>
+                <label class="ckbox2"><input type="checkbox" name="ok"/>&nbsp; 이용약관 동의</label>
+                <input type="submit" value="회원가입" class="signupbtn"/>
+
+                <div id="noid2"><p>아이디를 입력하세요</p><a href="#" class="noidbtn2"><p>확인</p></a></div>
+                <div id="noname1"><p>이름을 입력하세요</p><a href="#" class="namebtn1"><p>확인</p></a></div>
+                <div id="noname2"><p>이름을 입력하세요</p><a href="#" class="namebtn2"><p>확인</p></a></div>
+                <div id="nopwd1"><p>비밀번호를 입력하세요</p><a href="#" class="nopwdbtn1"><p>확인</p></a></div>
+                <div id="nopwd2" ><p>비밀번호가 일치하지 않습니다</p><a href="#" class="nopwdbtn2"><p>확인</p></a></div>
+                <div id="nook"><p>이용약관에 동의해주세요</p><a href="#" class="nookbtn"><p>확인</p></a></div>
+
+                <div id="signupsuc"><p>회원가입이 완료되었습니다</p><a href="#" class="sucbtn_s"><p>확인</p></a></div>
+            </form>
+        </div>
+    </div>   
+</header>
+<section id="contents2">
+    <ul class="cate">
+        <li><a href="#" class="cate1 active">장바구니</a></li>
+        <li><a href="#" class="cate2">배송조회</a></li>
+        <li><a href="#" class="cate3">등록제품</a></li>
+    </ul>
+    <section id="tab_contents2">
+        <div id="mypd" class="active">
+            <h4>장바구니</h4>
+            <div id="mypd1">
+                <ul class="product1">
+                    <li>
+                        <p>NO.1</p>
+                        <input type="checkbox" name="num"checked="checked"/>
+                    </li>
+                    <li>
+                        <a href="./dt.html"><img src="./images/lp1.jpg" alt="lp1"/></a>
+                    </li>
+                    <li>
+                        <a href="./dt.html">AKMU COLLABORATION ALBUM</br>[NEXT EPISODE] LP -LIMITED EDITION</a>
+                    </li>
+                    <li>
+                        <p class="price1"><span>판매가</span>&nbsp;&nbsp;56,800원</p>
+                    </li>
+                    <li class="count1">
+                        <span class='dwnbtn'>-</span>
+                        <span class="num" data-count="1">1</span>
+                        <span class='upbtn'>+</span>
+                    </li>
+                </ul>
+                <ul class="product2">
+                    <li>
+                        <p>NO.2</p>
+                        <input type="checkbox" name="num"checked="checked"/>
+                    </li>
+                    <li><a href="./dt.html"><img src="./images/lp2.jpg" alt="lp1"/></a></li>
+                    <li><a href="./dt.html">콜드 (Colde)</br>Love part 1 [LP]</a></li>
+                    <li><p class="price2"><span>판매가</span>&nbsp;&nbsp;55,500원</p></li>
+                    <li class="count2">
+                        <span class='dwnbtn'>-</span>
+                        <span class="num" data-count="1">1</span>
+                        <span class='upbtn'>+</span>
+                    </li>
+                </ul>
+                <ul class="product3">
+                    <li>
+                        <p>NO.3</p>
+                        <input type="checkbox" name="num"checked="checked"/>
+                    </li>
+                    <li><a href="./dt.html"><img src="./images/lp3.jpg" alt="lp1"/></a></li>
+                    <li><a href="./dt.html">이이언 (eAeon) - 2집</br>Fragile [다크 퍼플 컬러 LP]</a></li>
+                    <li><p class="price3"><span>판매가</span>&nbsp;&nbsp;61,400원</p></li>
+                    <li class="count3">
+                        <span class='dwnbtn'>-</span>
+                        <span class="num" data-count="1">1</span>
+                        <span class='upbtn'>+</span>
+                    </li>
+                </ul>
+                <ul class="product4">
+                    <li>
+                        <p>NO.4</p>
+                        <input type="checkbox" name="num"/>
+                    </li>
+                    <li><a href="./dt.html"><img src="./images/lp4.jpg" alt="lp4"/></a></li>
+                    <li><a href="./dt.html">후쿠오 (Hookuo) - Mild Dawn City </br>(Deluxe Edition) [퍼플 컬러]</a></li>
+                    <li><p class="price4"><span>판매가</span>&nbsp;&nbsp;45,800원</p></li>
+                    <li class="count4">
+                        <span class='dwnbtn'>-</span>
+                        <span class="num" data-count="1">1</span>
+                        <span class='upbtn'>+</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="mypd2">
+                <ul class="sum">
+                    <li>
+                        <p>장바구니 합계</p>
+                    </li>
+                    <li>
+                        <ul class="pdnum">
+                            <li><p>선택상품 수량</p></li>
+                            <li>3 개</li>
+                        </ul>    
+                    </li>    
+                    <li>
+                        <ul class="pdpc">
+                            <li><p>상품금액</p></li>
+                            <li>173,700 원</li>
+                        </ul>    
+                    </li>    
+                    <li>
+                        <ul class="total">
+                            <li><p>Total</p></li>
+                            <li>173,700 원</li>
+                        </ul>    
+                    </li>    
+                    <li class="agr">
+                        <p>주문확인 및 동의</p>
+                        <p>주문하시는 상품의 정보 및 가격, 배송정보를 확인하였으며,</br>구매에 동의하시겠습니까?</p>
+                        <label><input type="checkbox" name="agrchk" /> 동의합니다</label>
+                    </li>
+                    <li>
+                        <form name="form" id="buy" >
+                            <input type="submit" value="결제진행" class="buybtn" />      
+                        </form>
+                    </li>
+                </ul>
+                <div id="nochk"><p>주문확인 및 동의에 체크해주세요</p><span class="nochkbtn"><p>확인</p></span></div>
+            </div>
+            <div id="topbtn1">
+                <p>▲</p>
+            </div>
+            <div id="b_viewbtn">
+                <p>◀</p>
+            </div>
+            </div>
+        </div>
+        <div id="inq">
+            <h4>배송조회</h4>
+            <div id="inq1">
+                <p class="i_num1"><a href="./dt.html">주문번호 123456789</a></p>
+                <ul class="product11">
+                    <li>
+                        <a href="./dt.html"><img src="./images/lp1.jpg" alt="lp1"/></a>
+                    </li>
+                    <li>
+                        <a href="./dt.html">AKMU COLLABORATION ALBUM [NEXT EPISODE] LP</br>-LIMITED EDITION-</a>
+                    </li>
+                    <li>
+                        <p class="price11">56,800원 / 1 개</p>
+                    </li>
+                    <li>
+                        <p>결제완료</p>
+                    </li>
+                    <li>
+                        <p>주문취소</p>
+                    </li>
+                </ul>
+                <p class="i_num2"><a href="./dt.html">주문번호 234567891</a></p>
+                <ul class="product22">
+                    <li><a href="./dt.html"><img src="./images/lp2.jpg" alt="lp1"/></a></li>
+                    <li><a href="./dt.html">AKMU COLLABORATION ALBUM</br>[NEXT EPISODE] LP -LIMITED EDITION</a></li>
+                    <li><p class="price22">55,500원 / 1 개</p></li>
+                    <li><p>배송완료</p></li>
+                    <li><p>반품 / 교환</p></li>
+                </ul>
+                <p class="i_num3"><a href="./dt.html">주문번호 345678912</a></p>
+                <ul class="product33">
+                    <li><a href="./dt.html"><img src="./images/lp3.jpg" alt="lp1"/></a></li>
+                    <li><a href="./dt.html">AKMU COLLABORATION ALBUM</br>[NEXT EPISODE] LP -LIMITED EDITION</a></li>
+                    <li><p class="price33">61,400원 / 1 개</p></li>
+                    <li><p>배송완료</p></li>
+                    <li><p>반품 / 교환</p></li>
+                </ul>
+            </div>
+            <div id="topbtn2">
+                <p>▲</p>
+            </div>
+        </div>
+        <div id="reg">
+            <h4>등록상품</h4>
+            <a href="./pd2.html#">등록하기</a>
+            <div id="reg1">
+                <ul class="product111">
+                    <li>
+                        <p>1</p>
+                    </li>
+                    <li>
+                        <a href="./dt.html"><img src="./images/lp5.jpg" alt="lp5"/></a>
+                    </li>
+                    <li>
+                        <a href="./dt.html">로제 (Rose) - Rose First Single Vinyl LP -R- [Limited Edition] [LP]</a>
+                    </li>
+                    <li>
+                        <a href="./dt.html">제품번호 56789123</a>
+                    </li>
+                    <li>
+                        <p>61,700원 / 1 개</p>
+                    </li>
+                    <li>
+                        <p>판매중</p>
+                    </li>
+                </ul>            
+                <ul class="product222">
+                    <li><p>2</p></li>
+                    <li><a href="./dt.html"><img src="./images/lp6.jpg" alt="lp6"/></a></li>
+                    <li><a href="./dt.html">블랙핑크 (BLACKPINK) - BLACKPINK 1st VINYL LP [THE ALBUM]</a></li>
+                    <li><a href="./dt.html">제품번호 678912345</a></li>
+                    <li><p>49,200원 / 1 개</p></li>
+                    <li><p>판매완료</p></li>
+                </ul>            
+                <ul class="product333">
+                    <li><p>3</p></li>
+                    <li><a href="./dt.html"><img src="./images/lp7.jpg" alt="lp7"/></a></li>
+                    <li><a href="./dt.html">더 발룬티어스 - 1집 The Volunteers [LP] </a></li>
+                    <li><a href="./dt.html">제품번호 789123456</a></li>
+                    <li><p>47,700원 / 1 개</p></li>
+                    <li><p>판매완료</p></li>
+                </ul>            
+                <ul class="product444">
+                    <li><p>4</p></li>
+                    <li><a href="./dt.html"><img src="./images/lp8.jpg" alt="lp8"/></a></li>
+                    <li><a href="./dt.html">키 (KEY) - 미니앨범 1집: BAD LOVE (LP Ver.) [LP] </a></li>
+                    <li><a href="./dt.html">제품번호 891234567</a></li>
+                    <li><p>66,000원 / 1 개</p></li>
+                    <li><p>판매완료</p></li>
+                </ul>            
+                <ul class="product555">
+                    <li><p>5</p></li>
+                    <li><a href="./dt.html"><img src="./images/lp9.jpg" alt="lp9"/></a></li>
+                    <li><a href="./dt.html">이상순 - Leesangsoon [LP]</a></li>
+                    <li><a href="./dt.html">제품번호 912345678</a></li>
+                    <li><p>45,800원 / 1 개</p></li>
+                    <li><p>판매완료</p></li>
+                </ul>     
+                <div id="topbtn3">
+                    <p>▲</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<footer>
+    <div>
+        <ul class="util_f">
+            <li><p>이용약관</p></li>
+            <li><p>개인정보처리방침</p></li>
+            <li><a href="./sc.html">고객센터</a></li>
+            <li><a href="./main.html"><img src="./images/logo.png" alt="logo_f" /></a></li>
+            <li class="topbtn"><p>TOP▲</p></li>
+            <li><p>FOLLOW US</p></li>
+            <li><p>INSTAGRAM</p></li>
+            <li><p>TWITTER</p></li>
+        </ul>
+    </div>
+</footer>
+<script src="./js/common.js"></script>
+<script>
+function move(){
+    location.href='./buy.html';
+}
+
+/*수량증감*/
+$(".upbtn").click(function () {
+    var pdcount = parseInt($(this).siblings(".num").text());
+    pdcount += 1;
+    $(this).siblings(".num").text(pdcount);
+});
+$(".dwnbtn").click(function () {
+    var pdcount = parseInt($(this).siblings(".num").text());
+    pdcount -= 1;
+    $(this).siblings(".num").text(pdcount);
+});
+
+/*구매하기 팝업창*/
+$("#buy").submit(function(){
+    var u_agr = $("input[name='agrchk']");
+    if(!u_agr.is(":checked")){
+        $("#nochk").fadeIn(100);
+        return false;
+    }
+    if(u_agr){
+        move();
+        return false;
+    }
+});
+$(".nochkbtn").click(function(){
+    $("#nochk").fadeOut(100);
+    $("input[name='agrchk']:eq(0)").focus();
+});
+
+/*탑버튼*/
+$("#topbtn1>p").click(function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+});
+$("#topbtn2>p").click(function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+});
+$("#topbtn3>p").click(function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+});
+$(".topbtn>p").click(function(){
+    window.scrollTo({top:0, behavior:"smooth"});
+});
+
+/*탭메뉴*/
+$(function(){
+    $(".cate>li>a").click(function(){
+        $(".cate>li>a").removeClass("active");
+        $(this).addClass("active");
+
+        var idx = $(this).parent().index();
+        if(idx == 0){
+            $("#tab_contents2>div").removeClass("active");
+            $("#mypd").addClass("active"); 
+        }else if(idx == 1){
+            $("#tab_contents2>div").removeClass("active");
+            $("#inq").addClass("active");
+        }else{
+            $("#tab_contents2>div").removeClass("active");
+            $("#reg").addClass("active");
+        }
+    });
+});
+
+/*b_viewbtn*/
+$("#b_viewbtn").click(function(){
+    $('#mypd2').fadeToggle(150);
+});
+</script>
+</body>
+</html>

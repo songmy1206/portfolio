@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="descriptio" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="author" content=""/>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<div class="container">
+<body>
+<header>
+    <div id="util">
+        <ul>
+            <li><a href="#">장바구니</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">로그인</a></li>
+        </ul>
+    </div>
+    <nav id="gnb">
+        <ul class="menu">
+            <li><a href="#">MAN</a>
+				<ul class="submenu">
+					<li><a href="#">의류</a></li>
+					<li><a href="#">신발</a></li>
+					<li><a href="#">가방</a></li>	
+					<li><a href="#">악세서리</a></li>	
+				</ul>
+			</li>
+            <li><a href="#">WOMAN</a>
+				<ul class="submenu">
+					<li><a href="#">의류</a></li>
+					<li><a href="#">신발</a></li>
+					<li><a href="#">가방</a></li>	
+					<li><a href="#">악세서리</a></li>	
+				</ul>
+			</li>
+            <li><a href="#">KIDS</a>
+				<ul class="submenu">
+					<li><a href="#">의류</a></li>
+					<li><a href="#">신발</a></li>
+					<li><a href="#">가방</a></li>	
+					<li><a href="#">악세서리</a></li>	
+				</ul>
+			</li>
+            <li><a href="#" class="logo"><img src="./images/logo.jpg" alt="logo"/></a></li>
+            <li><a href="#">SALE</a>
+				<ul class="submenu">
+					<li><a href="#">남성 SALE</a></li>
+					<li><a href="#">여성 SALE</a></li>
+				</ul>
+			</li>
+            <li><a href="#">S/LAB</a>
+				<ul class="submenu">
+					<li><a href="#">S/LAB이란?</a></li>
+					<li><a href="#">남성 컬렉션</a></li>
+					<li><a href="#">여성 컬렉션</a></li>
+				</ul>
+			</li>
+            <li><a href="#">SPORTSTYLE</a>
+				<ul class="submenu">
+					<li><a href="#">SPORTSTYLE이란?</a></li>
+					<li><a href="#">남성 컬렉션</a></li>
+					<li><a href="#">여성 컬렉션</a></li>
+				</ul>
+			</li>
+        </ul>  
+    </nav>  
+</header>
+<section>
+<div id="slide">
+	<ul class="back_p">
+        <li class="top"></li>
+        <li></li>
+        <li></li>
+    </ul>
+	<div id="btn_wrap">
+		<img onclick="prevFun()" src="./images/prev.png" alt="prev s_btn"/>
+		<img onclick="nextFun()" src="./images/next.png" alt="next s_btn"/>
+	</div>
+	<div id="thumbs">
+		<a href="#" data-i="0"><img src="./images/btn_banner.png" alt=""/></a>
+		<a href="#" data-i="1"><img src="./images/btn_banner.png" alt=""/></a>
+		<a href="#" data-i="2"><img src="./images/btn_banner.png" alt=""/></a>
+	</div> 
+</div>
+    <div id="focus">
+	<h4>FOCUS NOW</h4>
+	<div class="bg1">
+		<div class="bg2">
+			<ul>	
+				<li><a href="#"><img src="./images/tshirts.png" alt="tshirts" /><p>티셔츠</p></a></li>
+				<li><a href="#"><img src="./images/pants.png" alt="pants" /><p>바지</p></a></li>
+				<li><a href="#"><img src="./images/shoes.png" alt="shoes" /><p>신발</p></a></li>	
+				<li><a href="#"><img src="./images/bag.png" alt="bag" /><p>가방</p></a></li>
+				<li><a href="#"><img src="./images/cap.png" alt="cap" /><p>모자</p></a></li>
+				<li><a href="#"><img src="./images/socks.png" alt="socks" /><p>양말</p></a></li>
+			</ul>
+		</div>
+	</div>
+    </div>
+	<div id="search">
+	<h4>SEARCH</h4>
+	<div class="box">
+		<ul>
+			<li>&nbsp;상품명<br/><input type="search" name="sch" size="75"/></li>
+			<li>
+				<ul>
+					<li><a href="#">로드런닝화</a></li>
+					<li><a href="#">선글라스</a></li>
+					<li><a href="#">보호장비</a></li>
+					<li><a href="#">백팩</a></li>
+					<li><a href="#">자켓</a></li>
+				</ul>
+			</li>
+			<li>카테고리<br/>
+				<select name="category">
+					<option value="cate">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+					<option value="top">상의</option>
+					<option value="bottom">하의</option>
+					<option value="outer">아우터</option>
+					<option value="acc">악세사리</option>
+					<option value="shoes">신발</option>
+				</select>
+			</li>
+			<li>유형<br/>
+				<select name="type">
+					<option value="typ">-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+					<option value="top">기능성</option>
+					<option value="bottom">방수</option>
+					<option value="outer">보온</option>
+					<option value="acc">쿨링</option>
+				</select>
+			</li>
+			<li>색상</li>
+			<li>
+				<ul>
+					<li><label><input type="radio" name="color"/><img src="./images/red.jpg" alt="" /></label></li>
+					<li><label><input type="radio" name="color"/><img src="./images/orange.jpg" alt="" /></label></li>
+					<li><label><input type="radio" name="color"/><img src="./images/yellow.jpg" alt="" /></label></li>
+					<li><label><input type="radio" name="color"/><img src="./images/green.jpg" alt="" /></label></li>
+					<li><label><input type="radio" name="color"/><img src="./images/blue.jpg" alt="" /></label></li>
+					<li><label><input type="radio" name="color"/><img src="./images/purple.jpg" alt="" /></label></li>
+					<li><label><input type="radio" name="color"/><img src="./images/white.jpg" alt="" /></label></li>
+					<li><label><input type="radio" name="color"/><img src="./images/black.jpg" alt="" /></label></li>
+				</ul>
+			</li>
+			<li><a href="#"><p>검색하기</p></a></li>
+		</ul>
+	</div>
+	</div>
+	<div id="best">
+	<h4>BEST PRODUCT</h4>
+		<ul class="up">
+			<li>
+				<figure>
+					<a href="#"><img src="./images/best1.png">
+					<figcaption>
+					익스플로어 피케 SS 티 M<br/>38,000원
+					</figcaption></a>
+				</figure>	
+			</li>
+			<li>
+				<figure>
+					<a href="#"><img src="./images/best2.png">
+					<figcaption>
+					슈퍼크로스 블래스트<br/>108,000원
+					</figcaption></a>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="#"><img src="./images/best3.png">
+					<figcaption>
+					센스 서포트<br/>30,000원
+					</figcaption></a>
+				</figure>	
+			</li>
+		</ul>
+		<ul class="down">
+			<li>
+				<figure>
+					<a href="#"><img src="./images/best4.png">
+					<figcaption>
+					아웃라이프 유틸리티 베스트 U<br/>195,000원
+					</figcaption></a>
+				</figure>	
+			</li>
+			<li>
+				<figure>
+					<a href="#"><img src="./images/best5.png">
+					<figcaption>
+					마운틴 햇<br/>46,000원
+					</figcaption></a>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<a href="#"><img src="./images/best6.png">
+					<figcaption>
+					아웃라이프 트랙 숏 M<br/>65,000원
+					</figcaption></a>
+				</figure>	
+			</li>
+		</ul>
+		<ul class="up_num">
+			<li><p>1</p></li>
+			<li><p>2</p></li>
+			<li><p>3</p></li>
+		</ul>
+		<ul class="down_num">
+			<li><p>4</p></li>
+			<li><p>5</p></li>
+			<li><p>6</p></li>
+		</ul>
+	</div>
+	<div id="banner">
+		<ul>
+			<li><a href="#"><img src="./images/banner1.jpg"></a></li>
+			<li><a href="#"><img src="./images/banner2.jpg"></a></li>
+		</ul>
+	</div>
+</section>
+<footer>
+	<div id="ft">
+		<div class="left">
+			<img src="./images/logo.jpg" alt="ft_logo"/>
+			<h4>(주)아머스포츠코리아</h4>
+			<p>
+				대펴 : 크라소파스칼장쟈크 개인정보관리책임자 : 박경호 사업자등록번호 : 120-81-57446
+			</p>
+			<p>
+				통신판매신고번호 : 제 2011-서울강남-02937호
+			</p>	
+			<p>	
+				주소 : 서울특별시 강남구 학동로 343(더피나클강남)9
+			</p>
+		</div>
+		<div class="right">
+			<h4>SOCIAL</h4>
+			<ul>
+				<li><a href="#"><img src="./images/icon3.jpg"></a></li>
+				<li><a href="#"><img src="./images/icon2.jpg"></a></li>
+				<li><a href="#"><img src="./images/icon1.jpg"></a></li>
+			</ul>
+			<p>고객만족센터 : 1833-4203</p>
+			<h5>(C) 2019 - Salomon S.A.S.</h5>
+			<ul class="service">
+				<li><a href="#">COOKIES</a></li>
+				<li><a href="#">서비스이용약관</a></li>
+				<li><a href="#">개인정보처리방침</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+</body>
+<script src="./js/script.js"></script>
+</div>
+</html>

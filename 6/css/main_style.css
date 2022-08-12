@@ -1,0 +1,5 @@
+@import "main_mobile.css";
+@import "main_pc.css";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+body{font-family: 'NanumSquare';}

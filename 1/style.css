@@ -1,0 +1,497 @@
+@charset "utf-8";
+*{margin:0; padding:0; list-style:none;}
+a{text-decoration:none;}
+a:link{color:#000;}
+a:visited{color:#000;}
+a:hover{color:skyblue;}
+a:active{color:#000;}
+
+.util>li>a:link{color:#000;}
+.util>li>a:visited{color:#000;}
+.util>li>a:hover{color:#000; font-weight:bold;}
+.util>li>a:active{color:#000;}
+
+footer>ul>li>a:link{color:#000;}
+footer>ul>li>a:visited{color:#000;}
+footer>ul>li>a:hover{color:#000; font-weight:bold;}
+footer>ul>li>a:active{color:#000;}
+
+/*헤더*/
+header::after,
+.brand::after,
+.popular>ul::after,
+.sns>ul::after,
+footer>ul::after{
+	content:'';
+	display:block;
+	clear:both;
+	width:0; height:0;
+	visibility:hidden;
+}
+header{
+	position:relative;
+	width:1200px; height:200px;
+	margin:0 auto;
+}
+header>img{
+	width:50px; height:50px;
+	margin:0 auto;
+}
+
+/*logo*/
+header>img{
+	position:absolute;
+	left:575px; top:40px;
+}
+header>img:hover{cursor:pointer;}
+
+/*util*/
+.util{
+	position:absolute;
+	right:0; top:60px;
+	float:right;
+	margin-top:25px;
+	background:#fff;
+}
+.util>li{
+	float:left;
+	margin-right:40px;
+	font-size:13px;
+}
+.util>li:last-child{margin-right:20px;}
+
+/*gnb*/
+.gnb{
+	position:absolute;
+	bottom:0; 
+	width:1200px;
+	display:flex;
+	justify-content:space-around;
+	background:#fff;
+	height:70px;
+	font-weight:bold;
+}
+.gnb>ul{
+	display:inherit;
+	align-items:center;
+	justify-content:space-between;
+	font-size:1.5rem;
+}
+/*gnb hover*/
+.gnb>li>a{
+	position:relative;
+	width:100%;
+	height:50px;
+	line-height:50px;
+	display:block;
+	text-align:center;
+}
+.gnb>li>a::after{
+	content:"";
+	display:block;
+	width:0%; 
+	height:3px;
+	background:skyblue;
+	position:absolute;
+	bottom:0;
+	left:50%;
+	transform:translateX(-50%);
+	transition:all .3s;	
+}
+.gnb>li>a:hover::after{width:75px;}
+
+
+
+/*main banner*/
+.main_bn{
+	width:1200px;
+	margin:0 auto;
+}
+.main_bn>img{
+	width:1200px; height:500px;
+	margin:0 auto 100px;
+}
+
+/*brand*/
+.brand{
+	width:1200px;
+	margin:0 auto 100px;
+	position:relative;
+}
+.divider{
+	position:absolute;
+	top:0; right:0;
+	width:300px;
+	background:#78b3c5;
+	height:3px;
+}
+.brand>img{
+	float:left;
+	position:relative;
+	margin:320px 20px 30px 25px;
+}
+.brand>img:first-child{margin:0 50px 0 0;}
+
+.tr{width:150px; height:150px;
+	transition:all .2s;}
+.tr:hover{
+	transform:scale(1.1, 1.1);
+	cursor:pointer;
+	transition:all .2s;
+}
+
+.text_b{
+	position:absolute;
+	width:400px; height:180px;
+	left:600px; top:50px;
+	background:rgba(255,255,255,.5);
+	padding:20px;
+}                   
+.text_b>h4{
+	margin-bottom:15px;
+	font-size:20px;
+	color:#78b3c5;
+	font-weight:bold;
+}
+.text_b>p{
+	line-height:2.7;
+	font-size:13px;
+}
+.text_b>p>span{background:#deeff6;}
+
+
+
+/*popular*/
+.popular{
+	width:1200px;
+	margin:0 auto 150px;
+	position:relative;
+}
+.popular>h4{
+	font-size:40px;
+	color:#78b3c5;
+	line-height:1.2;
+	margin-bottom:20px;
+}
+.popular>p{
+	color:#ddd;
+	font-size:13px;
+	line-height:1.9;
+}
+.popular>h5{
+	width:45px; 
+	color:#78b3c5;
+	font-size:13px;
+	padding:10px 40px;
+	border:1px solid #78b3c5;
+	text-align:center;
+	margin:20px 0px;
+}
+.popular>h5:hover{cursor:pointer;}
+.popular>ul>li{
+	float:left;
+	margin-left:20px;
+	transition:all .2s;
+}
+.popular>ul>li>img{width:210px;}
+.popular>ul{
+	position:absolute;
+	right:0; top:0;
+}
+.popular>ul>li:hover{
+	transform:translateY(-20px);
+	cursor:pointer;
+	transition:all .2s;
+}
+
+/*story*/
+.story{
+	width:1200px; 
+	padding-bottom:100px;
+	margin:0 auto;
+}
+.text_s{
+	text-align:center;
+	line-height:2;
+	padding-bottom:50px;
+}
+.text_s>h3{
+	font-size:20px;
+	color:#888;
+}
+.text_s>h4{
+	font-size:13px;
+	color:#aaa;
+}
+.s_size{
+	width:1200px; height:950px;
+	position:relative;
+	margin:0 auto;
+}
+.story>.s_size>.text_s1{
+	position:absolute;
+	left:200px; top:150px;
+	border-left:3px solid #78b3c5;
+	padding:20px;
+	width:550px;
+	background:rgba(255,255,255,.5);
+}
+.story>.s_size>.text_s1>h4{
+	color:#236680;
+	font-weight:bold;
+}
+.story>.s_size>.text_s1>p{
+	padding-top:10px;
+	font-size:13px;
+	line-height:2;
+}
+.story>.s_size>.text_s{position:relative;}
+.story>.s_size>.story_1{
+	position:absolute;
+	right:0;
+}
+.story>.s_size>.text_s2{
+	position:absolute;
+	right:200px; bottom:150px;
+	border-right:3px solid #78b3c5;
+	padding:20px;
+	text-align:right;
+	width:550px;
+	background:rgba(255,255,255,.5);
+}
+.story>.s_size>.text_s2>h4{
+	color:#236680;
+	font-weight:bold;
+}
+.story>.s_size>.text_s2>p{
+	padding-top:10px;
+	font-size:13px;
+	line-height:2;
+}
+.story>.s_size{position:relative;}
+.story>.s_size>.story_2{
+	position:absolute;
+	left:0; bottom:0;
+}
+
+/*sns*/
+.sns{
+	width:1200px; 
+	margin:0 auto 100px;
+}
+.text_sn{
+	text-align:center;
+	line-height:2;
+	padding-bottom:20px;
+}
+.text_sn>h3{
+	font-size:20px;
+	color:#000;
+}
+.text_sn>h5{
+	font-size:13px;
+	color:#aaa;
+}
+.text_sn>h5>span{color:#78b3c5;}
+.sns>ul>li{
+	float:left;
+	overflow:hidden;
+	margin-right:42.5px;
+}
+.sns>ul>li:last-child{margin-right:0;}
+
+.sns>ul>li:nth-child(1){position:relative;}
+.sns>ul>li:nth-child(1)>a>div{
+	position:absolute;
+	width:206px; height:206px;
+	background:rgba(0, 0, 0, 0.3); 
+	opacity:0;
+	color:#fff;
+}
+.sns>ul>li:nth-child(1):hover a div{	
+	top:0; 
+	opacity:3;
+	transition:all 0.3s;
+}
+.sns>ul>li:nth-child(1) a div p{
+	text-align:center;
+	margin:90px 50px;
+	padding:5px 0px;
+	border:2px solid white;
+	font-size:13px;
+}
+
+
+.sns>ul>li:nth-child(2){position:relative;}
+.sns>ul>li:nth-child(2)>a>div{
+	position:absolute;
+	width:206px; height:206px;
+	background:rgba(0, 0, 0, 0.3); 
+	opacity:0;
+	color:#fff;
+}
+.sns>ul>li:nth-child(2):hover a div{	
+	top:0; 
+	opacity:3;
+	transition:all 0.3s;
+}
+.sns>ul>li:nth-child(2) a div p{
+	text-align:center;
+	margin:90px 50px;
+	padding:5px 0px;
+	border:2px solid white;
+	font-size:13px;
+}
+
+
+.sns>ul>li:nth-child(3){position:relative;}
+.sns>ul>li:nth-child(3)>a>div{
+	position:absolute;
+	width:206px; height:206px;
+	background:rgba(0, 0, 0, 0.3); 
+	opacity:0;
+	color:#fff;
+}
+.sns>ul>li:nth-child(3):hover a div{	
+	top:0; 
+	opacity:3;
+	transition:all 0.3s;
+}
+.sns>ul>li:nth-child(3) a div p{
+	text-align:center;
+	margin:90px 50px;
+	padding:5px 0px;
+	border:2px solid white;
+	font-size:13px;
+}
+
+
+.sns>ul>li:nth-child(4){position:relative;}
+.sns>ul>li:nth-child(4)>a>div{
+	position:absolute;
+	width:206px; height:206px;
+	background:rgba(0, 0, 0, 0.3); 
+	opacity:0;
+	color:#fff;
+}
+.sns>ul>li:nth-child(4):hover a div{	
+	top:0; 
+	opacity:3;
+	transition:all 0.3s;
+}
+.sns>ul>li:nth-child(4) a div p{
+	text-align:center;
+	margin:90px 50px;
+	padding:5px 0px;
+	border:2px solid white;
+	font-size:13px;
+}
+
+
+.sns>ul>li:nth-child(5){position:relative;}
+.sns>ul>li:nth-child(5)>a>div{
+	position:absolute;
+	width:206px; height:206px;
+	background:rgba(0, 0, 0, 0.3); 
+	opacity:0;
+	color:#fff;
+}
+.sns>ul>li:nth-child(5):hover a div{	
+	top:0; 
+	opacity:3;
+	transition:all 0.3s;
+}
+.sns>ul>li:nth-child(5) a div p{
+	text-align:center;
+	margin:90px 50px;
+	padding:5px 0px;
+	border:2px solid white;
+	font-size:13px;
+}
+
+
+/*footer*/
+footer{
+	width:100%;
+	height:300px;
+	margin:0 auto;
+	background-color:#deeff6;
+}
+footer>ul{
+	width:464px;
+	margin:0 auto;
+}
+footer>ul>li{
+	float:left;
+	margin:35px 30px;
+	font-size:14px;
+}
+footer>p{
+	text-align:center;
+	line-height:2.5;
+	font-size:12px;
+	color:#666;
+	margin-bottom:10px;
+}
+.icon>ul{
+	width:270px; 
+	height:55px;
+	margin:0 auto;
+}
+.icon>ul>li{
+	width:24px; height:24px;
+	float:left;
+	margin:15px;
+}
+.icon>ul>li>a{
+	display:block;
+	height:24px;
+	width:24px;
+	overflow:hidden;
+	background:url() no-repeat;
+}
+
+.icon>ul>li:nth-of-type(1)>a{
+	background-image:url('./images/apple-logo.png');
+}
+.icon>ul>li:nth-of-type(1):hover>a{
+	background-image:url('./images/apple-logo_over.png');
+	cursor:pointer;
+}
+
+.icon>ul>li:nth-of-type(2)>a{
+	background-image:url('./images/google-play-logo.png');
+}
+.icon>ul>li:nth-of-type(2):hover>a{
+	background-image:url('./images/google-play-logo_over.png');
+	cursor:pointer;
+}
+
+.icon>ul>li:nth-of-type(3)>a{
+	background-image:url('./images/facebook-logo.png');
+}
+.icon>ul>li:nth-of-type(3):hover>a{
+	background-image:url('./images/facebook-logo_over.png');
+	cursor:pointer;
+}
+
+.icon>ul>li:nth-of-type(4)>a{
+	background-image:url('./images/instagram-logo.png');
+}
+.icon>ul>li:nth-of-type(4):hover>a{
+	background-image:url('./images/instagram-logo_over.png');
+	cursor:pointer;
+}
+
+.icon>ul>li:nth-of-type(5)>a{
+	background-image:url('./images/blogger-logo.png');
+}
+.icon>ul>li:nth-of-type(5):hover>a{
+	background-image:url('./images/blogger-logo_over.png');
+	cursor:pointer;
+}
+/*아아ㅋㅋ.. 너무 당연하게 한칸위로 올라갔어요 허허
+
+암튼 요래 복사해서 넣으시면 되구요. 이케하면 됩니당.넵 감사합니다
+
+*/

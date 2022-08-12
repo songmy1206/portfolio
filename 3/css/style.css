@@ -1,0 +1,370 @@
+@charset "utf-8";
+@import "reset.css";
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*공통사용&MOBILE*/
+.container{
+	width:90%;
+	max-width:1132px;
+	margin:0 auto;
+}
+.header{
+	position:relative;
+	padding:20px 5%;/*나머지 90%*/
+}
+.logo{
+	float:left;/*항상 왼쪽에 가있으면 되기 때문에 float left해줌. 포지션 사용을 하고 싶으면 absolute 지정 후 left:0 등의 값을 적용*/
+	width:150px;
+}
+.gnb{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	width:100%;
+	background:#359ae2;
+}
+.gnb>li{border-bottom:1px solid #fff;}
+.gnb>li>a{
+	display:block;
+	padding:10px 0px 10px 5%;
+	color:#fff;
+}
+/* .gnb>li:hover{background:#71b200;} */
+.menu{
+	float:right;
+	width:35px;
+	margin-top:10px;
+	cursor:pointer;
+}
+.menu span{
+	display:block;
+	width:100%;
+	height:3px;
+	background:#359ae2;
+}
+.menu span:nth-child(2){margin:10px 0px;}
+
+.clear::after,
+.container::after,
+.text_wrap::after{
+	content:'';
+	display:block;
+	clear:both;
+	width:0; height:0;
+	visibility:hidden;
+}
+.slider img{
+	display:block;
+	width:100%;
+	height:auto;
+}
+section>h2{
+	width:0; height:0;
+	overflow:hidden;
+	text-indent:-99999px;
+	visibility:hidden;
+	display:none;
+}
+
+/*영역 별 타이틀 스타일*/
+.sec_titile{
+	font-family: 'MaplestoryOTFBold', cursive;
+	font-size:42px;
+	color:#359ae2;
+	margin-bottom:35px;
+}
+.divider{
+	width:90%;
+	max-width:1132px;
+	margin:70px auto;
+	background:#ccc;
+	height:1px;
+}
+.m_divider{
+	width:20%;
+	height:5px;
+	background:#359ae2;
+	margin:70px auto;
+}
+
+/*about 영역*/
+.about_section{
+	margin-top:70px;
+	text-align:center;
+}
+.desc{font-size:12px; color:#666; line-height:1.5;}
+
+/*아이콘 영역*/
+.icon_section{margin-top:35px;}
+.icon_list>li{
+	text-align:center;
+	margin-top:35px;
+}
+.icon_list>li img{width:150px;}
+.icon_list>li h3{
+	font-size:1.8rem;
+	font-weight:bold;
+	color:#359ae2;
+	margin:20px 0px;
+}
+.icon_list>li p{
+	font-size:0.9rem;
+	line-height:1.6;
+	color:#666;
+}
+
+/*모바일 포토영역*/
+.photo_section .sec_titile{
+	text-align:center;
+	margin:0px auto 35px;
+}
+.photo_list li{
+	width:100%;
+}
+.photo_list li img{/*모바일 사용*/
+	width:100%;
+	max-width:100%;
+	display:block;
+	height:auto;
+}
+.photo_list li a{/*모바일 태블릿 데스크 공통사용*/
+	width:100%; height:100%;
+	display:block;
+	position:relative;
+	/*포지션으로 이동시키기 위해서 relative*/
+}
+.photo_list li a::before{/*모바일 태블릿 데스크 공통사용*/
+	content:'';
+	display:block;
+	width:100%; height:100%;
+	position:absolute;
+	background:#359ae2;
+	opacity:0;
+	transition:all .4s;
+}
+.photo_list li a:hover::before{
+	opacity:0.4;
+}
+.info{
+	z-index:999;
+	position:absolute;
+	top:0px; left:5%;
+	opacity:0;
+	transition:all 0.3s;
+	width:90%;
+}
+.photo_list li a:hover .info{/*모바일 태블릿 데스크 공통사용*/
+	opacity:1;
+	transform:translateY(30px);
+}
+.info h4{/*모바일 태블릿 데스크 공통사용*/
+	font-size:2rem;
+	font-weight:bold;
+	color:#fff;
+	margin-bottom:10px;
+}
+.info span{/*모바일 태블릿 데스크 공통사용*/
+	color:#fff;
+}
+
+/*모바일 리뷰영역*/
+.another_section .sec_titile{
+	text-align:center;
+	margin-bottom:35px;
+}
+.another_list li{
+	width:100%;
+	margin-top:35px;
+}
+.another_list li img{width:100%; display:block;}
+.another_list li h4{
+	display:block;
+	font-size:1.1rem;
+	margin:10px 0px;
+	color:#359ae2;
+}
+.another_list li p{
+	color:#333; line-height:1.2;
+}
+.contact_section{margin:70px 0px;}
+.contact_section .sec_titile{
+	text-align:center;
+	margin-bottom:60px;
+}
+.form_box input{
+	padding-bottom:15px;
+	margin-bottom:40px;
+	outline:0;
+}
+.form_box textarea{
+	outline:0;
+	height:170px;
+}
+.btn_wrap{
+	margin-top:40px;
+	text-align:right;
+}
+.btn_wrap button{
+	padding:10px 30px;
+	margin:0; border:0;
+	color:#fff;
+	background:#359ae2;
+	cursor:pointer;
+	border-radius:2px;
+}
+
+/*모바일 LOCATION 영역*/
+.location_section .sec_titile{
+	text-align:center;
+	margin-bottom:70px;
+}
+
+/*푸터 공통 사용*/
+footer{
+	margin-top:70px;
+	text-align:center;
+}
+.footer_logo{
+	width:180px;
+	margin:0 auto;
+}
+.copyright{
+	margin:20px 0px;
+	color:#aaa;
+}
+
+
+
+
+@media all and (min-width:768px){/*TABLET*/
+	.header{position:static;}
+	.menu{display:none;}
+	.gnb{
+		display:block !important;
+		position:static;
+		width:auto;
+		float:right;
+		margin-top:10px;
+		background:none;
+	}
+	.gnb>li{
+		float:left;
+		margin-left:50px;
+	}
+	.gnb>li>a{color:#359ae2;}
+	.gnb>li:hover a{
+		background:none;
+		font-weight:bold;
+	}/*왜안돼*/
+	
+	/*gnb hover 효과*/
+	.gnb>li>a{
+		position:relative;
+		width:100%;
+		height:20px;
+		line-height:20px;
+		display:block;
+		text-align:center;
+	}
+	.gnb>li>a::after{
+		content:"";
+		display:block;
+		width:0%;
+		height:2px;
+		background:#359ae2;
+		position:absolute;
+		bottom:0;
+		left:50%;
+		transform:translateX(-50%);
+		transition:all .3s;	
+	}
+	.gnb>li>a:hover::after{width:65px;}
+	
+	/*태블릿 ICON 영역*/
+	.icon_list li{
+	/*감싸고 있는 박스 가로너비 : 768px 
+	요소 사이즈(li) : 177px
+	여백 가져갈 : 20px
+	177 ÷ 768 x 100 = 23.046875%
+	20 ÷ 768 x 100 = 2.604166666666667*/
+		float:left;
+		width:23.046875%;
+		margin-left:2.604166666666667%;
+	}
+	.icon_list li:first-child{margin-left:0px;}
+	.icon_list li img{width:120px;}
+	
+	/*태블릿 포토 영역*/
+	.photo_list>li{
+		float:left;
+		width:50%;
+	}
+	
+	/*태블릿 타제품 영역*/
+	.another_list li{
+		float:left;
+		width:30%;
+		margin-left:5%;
+	}
+	.another_list li:first-child{margin-left:0;}
+	
+	/*태블릿 연락처 영역*/
+	.form_wrap, .text_wrap{
+		float:left;
+		width:48%;
+	}
+	.text_wrap{margin-left:2%;}
+	.btn_wrap button{margin-top:60px;}
+	
+}
+
+@media all and (min-width:1132px){/*PC*/
+	/*데스크탑 ABOUT 영역*/
+	.about_section{text-align:left;}
+	.about_section .sec_titile{
+		float:left;
+		margin-bottom:0;
+	}
+	.desc{
+		position:relative;
+		float:right;
+		padding-left:20px;
+		line-height:1.5;
+		width:70%;
+	}
+	.desc::before{
+		content:'';
+		display:block;
+		width:1px; height:90%;
+		background:#333;
+		position:absolute;
+		left:0; top:5%;
+	}
+	
+	/*PC 포토 영역*/
+	.photo_section .sec_titile{text-align:left;}
+	.photo_list>li{	width:25%;}
+	
+	/*PC 타제품 영역*/
+	.another_section .sec_titile{float:left;}
+	.another_list{
+		float:right;
+		width:78%;
+	}
+	.another_list li{margin-top:0;}
+	
+	/*PC 연락처 영역*/
+	.contact_section .sec_titile{float:left;}
+	.form_box{
+		float:right;
+		width:70%;
+	}
+	
+	/*PC LOCATION 영역*/
+	.location_section .sec_titile{text-align:left;}
+}
