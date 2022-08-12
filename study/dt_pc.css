@@ -2,7 +2,7 @@
 @media all and (min-width:641px){
 #dtpage1::after,
 #dtpage>ul::after,
-#dttab::after,
+.dttab::after,
 .extab::after,
 .rvpt>ul::after,
 .retab>ul::after{
@@ -139,20 +139,20 @@
 
 
 /*dttab*/
-#dttab{
+.dttab{
     width: 1440px; height: 100px;
     background: #fff;
     border-top: solid 2px #6c87d3;
     border-bottom: solid 2px #6c87d3;
 }
 .tab3{float: left;}
-#dttab>li:first-child>p{
+.dttab>li:first-child>p{
     font-size: 18px; 
     color: #000;
     display: inline-block;
     margin: 10px 0px 10px 70px;
 }
-.tab3>p,
+.tab3>button,
 .tab3>a{
     display: inline-block;
     width: 170px; height: 60px;
@@ -165,9 +165,9 @@
 .tab3>p{
     cursor: pointer;
 }
-#dttab>li:nth-child(2)>p{margin-left: 70px; display: inline-block;}
-#dttab>li>p.active,
-#dttab>li>a.active{
+.dttab>li:nth-child(2)>a{margin-left: 70px; display: inline-block;}
+.dttab>li>button.active,
+.dttab>li>a.active{
     font-weight: bold;
     color: #fff;
     background: #6c87d3;
@@ -178,7 +178,8 @@
 
 /*extab*/
 .extab{
-    width: 1440px; height: 3700px;
+    width: 1440px; 
+    /* height: 3700px; */
     background: #fff;
     margin-bottom: 200px;
 }
@@ -238,7 +239,8 @@
 
 /*rvtab*/
 .rvtab{
-    width: 1440px; height: 3700px;
+    width: 1440px; 
+    /* height: 3700px; */
     background: #fff;
     margin-bottom: 200px;
 }
@@ -365,7 +367,8 @@
 
 /*retab*/
 .retab{
-    width: 1440px; height: 3700px;
+    width: 1440px; 
+    /* height: 3700px; */
     background: #fff;
     margin-bottom: 200px;
 }

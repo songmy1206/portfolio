@@ -4,7 +4,7 @@
     
 a{text-decoration:none;}
 a:link, a:visited, a:hover, a:active{color:#000;}
-
+button{border: 0 none;background: none;cursor: pointer;}
 .util_f::after,
 header::after,
 #icon::after{
