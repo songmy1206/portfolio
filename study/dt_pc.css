@@ -36,15 +36,11 @@
     height: 585px; width: 1440px;
 }
 #dtpage2{margin-bottom: 200px;}
-#dtpage2>div{
-    transition: all .1s;
-    opacity: 0;
-    position: absolute;
+.dtpage2>div{
+    display:none;
 }
-#dtpage2>div.active{
-	z-index:9999; 
-	transition: all .1s;
-	opacity: 1;
+.dtpage2>div.active{
+	display:block;
 }
 
 

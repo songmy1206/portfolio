@@ -31,7 +31,7 @@
                 </li>
             </ul>
             <div class="dtpage2">
-                <div class="active extab">
+                <div class="extab active">
                     <p>음반소개</p>
                     <p>
                         AKMU COLLABORATION ALBUM [NEXT EPISODE] LP
@@ -165,7 +165,7 @@
                 </li>
             </ul>
             <div class="dtpage2">
-                <div class="active extab">
+                <div class="extab active">
                     <p>음반소개</p>
                     <p>
                         AKMU COLLABORATION ALBUM [NEXT EPISODE] LP
@@ -293,18 +293,20 @@
         $(function () {
             $(".tab3>a").click(function (e) {
                 e.preventDefault();
-                // $(".tab3>a").removeClass("active");
-                $(this).addClass("active");
+                var $this = $(this);
 
-                var idx = $(this).parent().index();
-                $(".dtpage2>div").removeClass("active");
-                if (idx == 1) {
-                    $(".extab").addClass("active");
-                } else if (idx == 2) {
-                    $(".rvtab").addClass("active");
-                } else {
-                    $(".retab").addClass("active");
-                }
+                // 부모기준으로 removeClass 시키기
+                var $tabWrap = $this.closest(".dttab");
+                // $tabWrap.find('a').removeClass("active");
+                // $this.addClass("active");
+
+                // 형제기준으로 removeClass 시키기
+                $this.addClass("active").closest('li').siblings('.tab3').find('a').removeClass('active');
+                
+                var idx = $tabWrap.find('.tab3').index($this.closest('.tab3'));
+                // $(".dtpage2>div").eq(idx).addClass('active').siblings().removeClass("active");
+                $tabWrap.next().children().eq(idx).addClass('active').siblings().removeClass("active");
+
                 // return false;
             });
         });
