@@ -10,7 +10,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <link href="../6/css/dt_style.css" rel="stylesheet" type="text/css" />
+    <link href="./dt_style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                     <p>구매후기</p>
                 </li>
                 <li class="tab3">
-                    <p>반품 및 교환</p>
+                    <a href="#">반품 및 교환</a>
                 </li>
             </ul>
             <div id="dtpage2">
@@ -157,8 +157,8 @@
     <script>
         /*탭메뉴*/
         $(function () {
-            $(".tab3>p").click(function () {
-                $(".tab3>p").removeClass("active");
+            $(".tab3>p, .tab3>a").click(function () {
+                $(".tab3>p, .tab3>a").removeClass("active");
                 $(this).addClass("active");
 
                 var idx = $(this).parent().index();
