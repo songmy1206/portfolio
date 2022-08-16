@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>accodian</title>
   <link rel="stylesheet" href="front.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 <body>
   <ul class="folding-list">
@@ -47,8 +48,9 @@
     </li>
   </ul>
   <script>
-    $(".folding-btn").click(function(){
-      $(".folding-panel").slideDown("slow", function(){
+    $(document).ready(function(){
+      $(".folding-btn").click(function(){
+        $(".folding-panel").stop().slideToggle();
       });
     });
   </script>
