@@ -50,7 +50,12 @@
   <script>
     $(document).ready(function(){
       $(".folding-btn").click(function(){
-        $(".folding-panel").stop().slideToggle();
+        // $(".folding-panel").stop().slideToggle();
+        var $this = $(this);
+        var $li = $this.closest('li')
+        var $panel = $li.find('.folding-panel');
+        $li.toggleClass('open');
+        $panel.stop().slideToggle();
       });
     });
   </script>
