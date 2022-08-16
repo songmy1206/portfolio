@@ -7,86 +7,126 @@
   <title>accodian</title>
   <link rel="stylesheet" href="front.min.css">
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <style>
+    .bg-btn{
+      width:156px;
+      height:60px;
+      font-size:0;
+      color:transparent;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='156' height='60' viewBox='0 0 156 60' fill='none'%3E%3Cpath d='M0 12C0 5.37258 5.37258 0 12 0H144C150.627 0 156 5.37258 156 12V48C156 54.6274 150.627 60 144 60H12C5.37258 60 0 54.6274 0 48V12Z' fill='%2300CACA'/%3E%3Cpath d='M46.2108 30.728V32.276H61.0788V30.728H46.2108ZM48.0468 27.848V29.36H59.3688V27.848H48.0468ZM48.0468 23.6V28.586H49.9188V25.13H59.2608V23.6H48.0468ZM53.6088 33.5C50.0808 33.5 47.9388 34.58 47.9388 36.488C47.9388 38.396 50.0808 39.476 53.6088 39.476C57.1368 39.476 59.2788 38.396 59.2788 36.488C59.2788 34.58 57.1368 33.5 53.6088 33.5ZM53.6088 34.94C56.0208 34.94 57.3708 35.48 57.3708 36.488C57.3708 37.496 56.0208 38.018 53.6088 38.018C51.1968 38.018 49.8468 37.496 49.8468 36.488C49.8468 35.48 51.1968 34.94 53.6088 34.94ZM62.7514 31.988V33.5H77.6554V31.988H62.7514ZM64.6234 23.42V24.86H73.9294V26.246H64.6414V29.63H66.5134V27.614H75.7834V23.42H64.6234ZM64.6414 29.054V30.512H76.1254V29.054H64.6414ZM69.2674 29.774V32.78H71.1394V29.774H69.2674ZM64.4074 34.616V36.128H74.0014V39.386H75.8914V34.616H64.4074ZM90.2 23.042V39.494H92.072V23.042H90.2ZM91.64 29.648V31.214H94.628V29.648H91.64ZM79.238 25.58V27.092H88.886V25.58H79.238ZM84.116 28.28C81.758 28.28 80.03 29.864 80.03 32.114C80.03 34.382 81.758 35.966 84.116 35.966C86.456 35.966 88.184 34.382 88.184 32.114C88.184 29.864 86.456 28.28 84.116 28.28ZM84.116 29.828C85.43 29.828 86.384 30.728 86.384 32.114C86.384 33.5 85.43 34.418 84.116 34.418C82.784 34.418 81.83 33.5 81.83 32.114C81.83 30.728 82.784 29.828 84.116 29.828ZM83.144 23.276V26.21H85.034V23.276H83.144ZM107.569 23.042V39.494H109.459V23.042H107.569ZM102.745 24.788V25.112C102.745 29.504 100.747 32.762 96.0126 35.048L97.0026 36.56C102.655 33.806 104.599 29.666 104.599 24.788H102.745ZM96.8226 24.788V26.3H103.591V24.788H96.8226Z' fill='white'/%3E%3C/svg%3E") no-repeat;
+    }
+  </style>
 </head>
 <body>
-  <ul class="folding-list">
-    <li>
-      <div class="folding-head">
-        <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
-      </div>
-      <div class="folding-panel">
-        내용<br />
-        내용<br />
-        내용<br />
-        내용<br />
-        내용<br />
-      </div>
-    </li>
-    <li>
-      <div class="folding-head">
-        <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
-      </div>
-      <div class="folding-panel">
-        내용<br />
-        내용<br />
-        내용<br />
-        내용<br />
-        내용<br />
-      </div>
-    </li>
-    <li>
-      <div class="folding-head">
-        <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
-      </div>
-      <div class="folding-panel">
-        내용<br />
-        내용<br />
-        내용<br />
-        내용<br />
-        내용<br />
-      </div>
-    </li>
-  </ul>
-  <br>
-  <br>
-  <ul class="folding-list _toggle">
-    <li>
-      <div class="folding-head">
-        <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
-      </div>
-      <div class="folding-panel">
-        내용<br />
-        내용<br />
-        내용<br />
-        내용<br />
-        내용<br />
-      </div>
-    </li>
-    <li>
-      <div class="folding-head">
-        <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
-      </div>
-      <div class="folding-panel">
-        내용<br />
-        내용<br />
-        내용<br />
-        내용<br />
-        내용<br />
-      </div>
-    </li>
-    <li>
-      <div class="folding-head">
-        <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
-      </div>
-      <div class="folding-panel">
-        내용<br />
-        내용<br />
-        내용<br />
-        내용<br />
-        내용<br />
-      </div>
-    </li>
-  </ul>
+  <div class="section">
+    <h1>아코디언</h1>
+    <ul class="folding-list">
+      <li>
+        <div class="folding-head">
+          <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
+        </div>
+        <div class="folding-panel">
+          내용<br />
+          내용<br />
+          내용<br />
+          내용<br />
+          내용<br />
+        </div>
+      </li>
+      <li>
+        <div class="folding-head">
+          <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
+        </div>
+        <div class="folding-panel">
+          내용<br />
+          내용<br />
+          내용<br />
+          내용<br />
+          내용<br />
+        </div>
+      </li>
+      <li>
+        <div class="folding-head">
+          <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
+        </div>
+        <div class="folding-panel">
+          내용<br />
+          내용<br />
+          내용<br />
+          내용<br />
+          내용<br />
+        </div>
+      </li>
+    </ul>
+    <br>
+    <br>
+    <ul class="folding-list _toggle">
+      <li>
+        <div class="folding-head">
+          <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
+        </div>
+        <div class="folding-panel">
+          내용<br />
+          내용<br />
+          내용<br />
+          내용<br />
+          내용<br />
+        </div>
+      </li>
+      <li>
+        <div class="folding-head">
+          <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
+        </div>
+        <div class="folding-panel">
+          내용<br />
+          내용<br />
+          내용<br />
+          내용<br />
+          내용<br />
+        </div>
+      </li>
+      <li>
+        <div class="folding-head">
+          <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
+        </div>
+        <div class="folding-panel">
+          내용<br />
+          내용<br />
+          내용<br />
+          내용<br />
+          내용<br />
+        </div>
+      </li>
+    </ul>
+    <br>
+    <h1>disabled</h1>
+    <div>
+      <button class="button primary" disabled>버튼입니다.</button>
+    </div>
+    <br>
+    <div class="checkbox">
+      <input type="checkbox" id="chk1" disabled /><i aria-hidden="true"></i>
+      <label class="lbl" for="chk1">체크박스</label>
+    </div>
+    <br>
+    <div class="select">
+      <select name="" id="" disabled>
+        <option value="">선택</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+    </div>
+    <br>
+    <label for="textarea-1">내용입력</label>
+    <div class="textarea">
+      <textarea id="textarea-1" placeholder="내용입력" title="내용입력" disabled></textarea>
+    </div>
+    <br>
+    <h1>IR 기법</h1>
+    <button class="bg-btn">등록하기(PC)</button>
+    <button class="bg-btn" aria-label="등록하기(모바일)"></button>
+  </div>
   <div style="height: 2000px;background:#fafafa;"></div>
   <script>
     $(document).ready(function(){
@@ -106,6 +146,12 @@
             $siblings.find('.folding-panel').stop().slideUp();
           }
         }
+      });
+
+      $('.button').click(function(e){
+        e.preventDefault();
+        // if($(this).hasClass('disabled')) return;
+        console.log('버튼클릭');
       });
     });
   </script>
