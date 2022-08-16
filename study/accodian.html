@@ -47,15 +47,65 @@
       </div>
     </li>
   </ul>
+  <br>
+  <br>
+  <ul class="folding-list _toggle">
+    <li>
+      <div class="folding-head">
+        <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
+      </div>
+      <div class="folding-panel">
+        내용<br />
+        내용<br />
+        내용<br />
+        내용<br />
+        내용<br />
+      </div>
+    </li>
+    <li>
+      <div class="folding-head">
+        <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
+      </div>
+      <div class="folding-panel">
+        내용<br />
+        내용<br />
+        내용<br />
+        내용<br />
+        내용<br />
+      </div>
+    </li>
+    <li>
+      <div class="folding-head">
+        <a href="#" class="folding-btn"><div>제목제목 제목제목 제목제목 제목제목</div></a>
+      </div>
+      <div class="folding-panel">
+        내용<br />
+        내용<br />
+        내용<br />
+        내용<br />
+        내용<br />
+      </div>
+    </li>
+  </ul>
+  <div style="height: 2000px;background:#fafafa;"></div>
   <script>
     $(document).ready(function(){
-      $(".folding-btn").click(function(){
+      $(".folding-btn").click(function(e){
+        e.preventDefault();
         // $(".folding-panel").stop().slideToggle();
+        
         var $this = $(this);
         var $li = $this.closest('li')
         var $panel = $li.find('.folding-panel');
         $li.toggleClass('open');
         $panel.stop().slideToggle();
+        if($this.closest('.folding-list').hasClass('_toggle')){
+          if($li.hasClass('open')){
+            var $siblings = $li.siblings();
+            $siblings.removeClass('open');
+            $siblings.find('.folding-panel').stop().slideUp();
+          }
+        }
       });
     });
   </script>
